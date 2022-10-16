@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
+    <link rel="stylesheet" href="./css/modern-normalize.css" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,31 +14,44 @@
     />
   </head>
   <body>
-    <header>
-      <a class="logotype" href="./index.html"><span class="piece-of-logotype">Web</span>Studio</a>
-      <nav>
-        <ul class="nobull">
-          <li><a class="menu-item" href="#">Agencja</a></li>
-          <li><a class="menu-item" href="./portfolio.html">Portfolio</a></li>
-          <li><a class="menu-item" href="#">Kontakt</a></li>
-        </ul>
-      </nav>
+    <header class="container">
+      <div class="header-content">
+        <a class="logotype" href="./index.html"
+          ><span class="piece-of-logotype">Web</span>Studio</a
+        >
 
-      <div>
-        <ul class="nobull">
-          <li><a class="contact-link" href="mailto:info@example.com">info@example.com</a></li>
-          <li><a class="contact-link" href="tel:+48111111111">+48 111 111 111</a></li>
-        </ul>
+        <nav>
+          <ul class="nobull main-menu">
+            <li><a class="menu-item" href="#">Agencja</a></li>
+            <li><a class="menu-item" href="./portfolio.html">Portfolio</a></li>
+            <li><a class="menu-item" href="#">Kontakt</a></li>
+          </ul>
+        </nav>
+
+        <div>
+          <ul class="nobull contact-links">
+            <li>
+              <a class="contact-link" href="mailto:info@example.com"
+                >info@example.com</a
+              >
+            </li>
+            <li>
+              <a class="contact-link" href="tel:+48111111111"
+                >+48 111 111 111</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
     <main>
-      <section>
+      <section class="container">
         <h1 class="main-headline">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
         <button class="button-cta" type="button">Zamów usługę</button>
       </section>
 
-      <section>
+      <section class="container">
         <h2 class="hiddenheader">Services</h2>
         <ul class="body-text nobull">
           <li>
@@ -71,7 +85,7 @@
         </ul>
       </section>
 
-      <section>
+      <section class="container">
         <h2 class="secondary-headline">Czym się zajmujemy?</h2>
         <ul class="nobull">
           <li>
@@ -101,7 +115,7 @@
         </ul>
       </section>
 
-      <section>
+      <section class="container">
         <h2 class="secondary-headline">Nasz Zespół</h2>
 
         <ul class="nobull">
@@ -149,14 +163,22 @@
       </section>
     </main>
 
-    <footer>
-      <a class="logotype" href="./index.html"><span class="piece-of-logotype">Web</span>Studio</a>
+    <footer class="container">
+      <a class="logotype" href="./index.html"
+        ><span class="piece-of-logotype">Web</span>Studio</a
+      >
 
       <address>
         <p class="address-info">m. Warszawa, Aleje Jerozolimskie 21</p>
         <ul class="nobull">
-          <li><a class="contact-link" href="mailto:info@example.com">info@example.com</a></li>
-          <li><a class="contact-link" href="tel:+48111111111">+48 111 111 111</a></li>
+          <li>
+            <a class="contact-link" href="mailto:info@example.com"
+              >info@example.com</a
+            >
+          </li>
+          <li>
+            <a class="contact-link" href="tel:+48111111111">+48 111 111 111</a>
+          </li>
         </ul>
       </address>
     </footer>
