@@ -15,38 +15,50 @@
     />
   </head>
   <body>
-    <a class="logotype" href="./index.html"
-      ><span class="piece-of-logotype">Web</span>Studio</a
-    >
-
-    <nav>
-      <ul class="nobull">
-        <li><a class="menu-item" href="#">Agencja</a></li>
-        <li><a class="menu-item" href="./portfolio.html">Portfolio</a></li>
-        <li><a class="menu-item" href="#">Kontakt</a></li>
-      </ul>
-    </nav>
-    <div>
-      <ul class="nobull">
-        <li>
-          <a class="contact-link" href="mailto:info@example.com"
-            >info@example.com</a
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <a class="logotype" href="./index.html"
+            ><span class="piece-of-logotype">Web</span>Studio</a
           >
-        </li>
-        <li>
-          <a class="contact-link" href="tel:+48111111111">+48 111 111 111</a>
-        </li>
-      </ul>
-    </div>
+
+          <nav>
+            <ul class="nobull main-menu">
+              <li><a class="menu-item" href="#">Agencja</a></li>
+              <li>
+                <a class="menu-item" href="./portfolio.html">Portfolio</a>
+              </li>
+              <li><a class="menu-item" href="#">Kontakt</a></li>
+            </ul>
+          </nav>
+
+          <div>
+            <ul class="nobull contact-links">
+              <li>
+                <a class="contact-link" href="mailto:info@example.com"
+                  >info@example.com</a
+                >
+              </li>
+              <li>
+                <a class="contact-link" href="tel:+48111111111"
+                  >+48 111 111 111</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
 
     <div class="divider"></div>
 
     <main>
-      <section>
+      <section class="section">
+        <div class="container">
         <h2 class="hiddenheader">Portfolio</h2>
 
-        <div>
-          <ul class="nobull">
+        <div class="filter-buttons-container">
+          <ul class="nobull filter-buttons-list">
             <li>
               <button class="button-filter-active" type="button">
                 Wszystkie
@@ -73,9 +85,11 @@
               </button>
             </li>
           </ul>
+        
         </div>
 
-        <ul class="nobull">
+        <div>
+        <ul class="nobull list-of-works">
           <li>
             <img
               src="./images/portfolio_thumbnails/img.jpg"
@@ -83,8 +97,10 @@
               width="370"
               height="294"
             />
+            <div class="portfolio-work-item-description">
             <h3 class="project-name">Technocrack</h3>
             <p class="scope-of-work">Strona internetowa</p>
+          </div>
           </li>
 
           <li>
@@ -94,8 +110,10 @@
               width="370"
               height="294"
             />
+            <div class="portfolio-work-item-description">
             <h3 class="project-name">Grafika New Orlean vs Golden Star</h3>
             <p class="scope-of-work">Design</p>
+          </div>
           </li>
 
           <li>
@@ -105,8 +123,10 @@
               width="370"
               height="294"
             />
+            <div class="portfolio-work-item-description">
             <h3 class="project-name">Restauracja Seafood</h3>
             <p class="scope-of-work">Aplikacja</p>
+            </div>
           </li>
 
           <li>
@@ -116,8 +136,10 @@
               width="370"
               height="294"
             />
+            <div class="portfolio-work-item-description">
             <h3 class="project-name">Projekt Prime</h3>
             <p class="scope-of-work">Marketing</p>
+          </div>
           </li>
 
           <li>
@@ -127,8 +149,10 @@
               width="370"
               height="294"
             />
+            <div class="portfolio-work-item-description">
             <h3 class="project-name">Projekt Boxes</h3>
             <p class="scope-of-work">Aplikacja</p>
+          </div>
           </li>
 
           <li>
@@ -138,8 +162,10 @@
               width="370"
               height="294"
             />
+            <div class="portfolio-work-item-description">
             <h3 class="project-name">Inspiration has no Borders</h3>
             <p class="scope-of-work">Strona internetowa</p>
+          </div>
           </li>
 
           <li>
@@ -149,8 +175,10 @@
               width="370"
               height="294"
             />
+            <div class="portfolio-work-item-description">
             <h3 class="project-name">Magazyn Limited Edition</h3>
             <p class="scope-of-work">Design</p>
+            </div>
           </li>
 
           <li>
@@ -160,8 +188,10 @@
               width="370"
               height="294"
             />
+            <div class="portfolio-work-item-description">
             <h3 class="project-name">Projekt LAB</h3>
             <p class="scope-of-work">Marketing</p>
+            </div>
           </li>
 
           <li>
@@ -171,30 +201,42 @@
               width="370"
               height="294"
             />
+            <div class="portfolio-work-item-description">
             <h3 class="project-name">Growing Business</h3>
             <p class="scope-of-work">Aplikacja</p>
           </li>
+        </div>
         </ul>
+      </div>
+    </div>
       </section>
     </main>
     <footer>
-      <a class="logotype" href="./index.html"
-        ><span class="piece-of-logotype">Web</span>Studio</a
-      >
+      <div class="container">
+        <div class="footer-content">
+          <a class="logotype-v2" href="./index.html"
+            ><span class="piece-of-logotype">Web</span>Studio</a
+          >
 
-      <address>
-        <p class="address-info">m. Warszawa, Aleje Jerozolimskie 21</p>
-        <ul class="nobull">
-          <li>
-            <a class="contact-link" href="mailto:info@example.com"
-              >info@example.com</a
-            >
-          </li>
-          <li>
-            <a class="contact-link" href="tel:+48111111111">+48 111 111 111</a>
-          </li>
-        </ul>
-      </address>
+          <address class="contact-info">
+            <div class="address-info">
+              <p>m. Warszawa, Aleje Jerozolimskie 21</p>
+            </div>
+            <ul class="nobull">
+              <li class="e-mail-link-in-footer">
+                <a class="contact-link" href="mailto:info@example.com"
+                  >info@example.com</a
+                >
+              </li>
+              <li class="tel-link-in-footer">
+                <a class="contact-link" href="tel:+48111111111"
+                  >+48 111 111 111</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
