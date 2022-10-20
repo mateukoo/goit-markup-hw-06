@@ -67,8 +67,10 @@ nav {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-color);
-  padding-left: 237px;
-  padding-right: 237px;
+  margin: 0 auto;
+  max-width: 696px;
+  /* padding-left: 237px;
+  padding-right: 237px; */
 }
 
 .secondary-headline {
@@ -196,7 +198,7 @@ nav {
   line-height: 1.2;
   letter-spacing: 0.03em;
   color: var(--headline-color);
-  padding-top: 24px;
+  padding-top: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -219,7 +221,7 @@ nav {
   letter-spacing: 0.03em;
   color: var(--body-text-color);
   padding-top: 10px;
-  padding-bottom: 24px;
+  padding-bottom: 30px;
 }
 
 .scope-of-work {
@@ -385,7 +387,7 @@ footer {
 }
 
 .portfolio-work-item {
-  flex-basis: 370px;
+  flex-basis: calc((100% - 2 * 30px) / 3);
 }
 
 .portfolio-work-item-description {
