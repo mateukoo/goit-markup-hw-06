@@ -69,8 +69,6 @@ nav {
   color: var(--white-color);
   margin: 0 auto;
   max-width: 696px;
-  /* padding-left: 237px;
-  padding-right: 237px; */
 }
 
 .secondary-headline {
@@ -195,7 +193,7 @@ nav {
 .team-member-name {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.2;
+  line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--headline-color);
   padding-top: 30px;
@@ -259,7 +257,8 @@ nav {
   color: var(--body-text-color);
 }
 
-.contact-link:hover {
+.contact-link:hover,
+.contact-link:focus {
   text-decoration: none;
   color: var(--brand-color);
 }
