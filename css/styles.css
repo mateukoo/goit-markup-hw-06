@@ -8,7 +8,6 @@
   --white-color: #ffffff;
 }
 
-
 body {
   font-family: "Roboto", "Raleway", sans-serif;
   color: #212121;
@@ -99,6 +98,23 @@ nav {
   display: inline-flex;
   gap: 30px;
 }
+.brand-values-icon-set {
+  display: inline-flex;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.brand-values-icon-set li:nth-child(1),
+.brand-values-icon-set li:nth-child(2),
+.brand-values-icon-set li:nth-child(3),
+.brand-values-icon-set li:nth-child(4) {
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  padding-top: 25px;
+  padding-right: 100px;
+  padding-bottom: 25px;
+  padding-left: 100px;
+}
 
 .hiddenheader {
   display: none;
@@ -187,7 +203,6 @@ nav {
   color: var(--white-color);
   cursor: pointer;
   transition: 500ms;
-  
 }
 
 .team-member-name {
@@ -219,8 +234,36 @@ nav {
   letter-spacing: 0.03em;
   color: var(--body-text-color);
   padding-top: 10px;
-  padding-bottom: 30px;
+  padding-bottom: 16px;
 }
+
+.sm-icons-container-our-team {
+  display: inline-flex;
+  padding-right: 32px;
+  padding-left: 32px;
+  padding-bottom: 30px;
+  gap: 10px;
+}
+
+/* .sm-icon-team {
+  --color4:var(--background-color-2nd);
+  background: #2196f3;
+  
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  
+} */
+
+/* .sm-icon-team:hover,
+.sm-rounded-button-team-style:hover {
+--color4:var(--white-color);
+background:var(--brand-color);
+}
+
+.sm-rounded-button-team-style {
+  
+} */
 
 .scope-of-work {
   font-weight: 400;
@@ -265,11 +308,35 @@ nav {
 
 .contact-links {
   display: inline-flex;
-  width: 295px;
+  width: 310px;
   justify-content: space-between;
 }
 
+.contact-link-email-topbar {
+  display: flex;
+  align-items: center;
+}
 
+.contact-link-email-topbar:hover,
+.contact-link-email-topbar:focus,
+.contact-link-smartphone-topbar:hover,
+.contact-link-smartphone-topbar:focus {
+  text-decoration: none;
+  --color3: var(--brand-color);
+}
+
+.envelope-icon-topbar {
+  margin-right: 10px;
+}
+
+.contact-link-smartphone-topbar {
+  display: flex;
+  align-items: center;
+}
+
+.smartphone-icon-topbar {
+  margin-right: 10px;
+}
 
 .nobull {
   list-style-type: none;
@@ -313,14 +380,20 @@ header {
 }
 
 .main-banner {
+  background: linear-gradient(
+      to top,
+      rgba(48, 49, 59, 0.217) 40%,
+      rgba(48, 49, 59, 0.217) 40%
+    ),
+    url(../images/main-banner-photo.jpg);
+  background-size: cover;
   background-color: var(--background-color);
   padding-top: 200px;
   padding-bottom: 200px;
   margin-left: auto;
   margin-right: auto;
-  max-width: 100%;
+  max-width: 1600px;
 }
-
 
 .what-we-de-content {
   display: inline-flex;
@@ -337,6 +410,24 @@ header {
   padding-left: 0px;
   padding-right: 0px;
   gap: 30px;
+}
+
+.our-clients-list {
+  display: inline-flex;
+  padding-top: 50px;
+  padding-left: 0px;
+  padding-right: 0px;
+  gap: 30px;
+}
+
+.our-clients-logo-item {
+  max-width: 170;
+  padding-top: 16px;
+  padding-right: 32px;
+  padding-bottom: 16px;
+  padding-left: 32px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
 }
 
 .our-team {
@@ -363,11 +454,43 @@ footer {
   background-color: var(--background-color);
 }
 
+.footer-content {
+  display: inline-flex;
+}
+
+.social-media-box-footer {
+  padding-top: 12px;
+  padding-left: 70px;
+}
+
+.sm-icons-container-footer {
+  display: inline-flex;
+  gap: 10px;
+}
+
+.sm-rounded-button-footer-style {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 128px;
+  border: none;
+  padding-top: 12px;
+  padding-right: 12px;
+  padding-bottom: 12px;
+  padding-left: 12px;
+  cursor: pointer;
+}
+
+.sm-rounded-button-footer-style:hover,
+.sm-rounded-button-footer-style:focus {
+  background: var(--brand-color);
+}
+
 .contact-info {
   padding-top: 20px;
   padding-bottom: 9px;
 }
-
 
 .e-mail-link-in-footer {
   padding-top: 9px;
@@ -375,6 +498,16 @@ footer {
 
 .tel-link-in-footer {
   padding-top: 9px;
+}
+
+.social-media-icons-headline-footer {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 0.88;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color);
+  padding-bottom: 20px;
 }
 
 .list-of-works {
@@ -389,6 +522,13 @@ footer {
   flex-basis: calc((100% - 2 * 30px) / 3);
 }
 
+.portfolio-work-item:hover,
+.portfolio-work-item:focus {
+  flex-basis: calc((100% - 2 * 30px) / 3);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .portfolio-work-item-description {
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
@@ -399,5 +539,4 @@ footer {
   padding-left: 24px;
   padding-bottom: 20px;
   margin-top: -5px;
-
 }
