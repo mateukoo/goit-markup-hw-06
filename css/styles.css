@@ -8,6 +8,20 @@
   --white-color: #ffffff;
 }
 
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+.nobull {
+  list-style-type: none;
+}
+
 body {
   font-family: "Roboto", "Raleway", sans-serif;
   color: #212121;
@@ -165,6 +179,27 @@ nav {
   color: var(--headline-color);
   cursor: pointer;
 }
+.button-filter-unactive:hover,
+.button-filter-unactive:focus {
+  padding-top: 6px;
+  padding-right: 22px;
+  padding-left: 22px;
+  padding-bottom: 6px;
+  background: #f5f4fa;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border: 0;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.03em;
+  color: var(--headline-color);
+  cursor: pointer;
+}
 
 .filter-buttons-container {
   display: flex;
@@ -183,9 +218,7 @@ nav {
   gap: 8px;
 }
 
-.button-filter-active,
-.button-filter-unactive:hover,
-.button-filter-unactive:focus {
+.button-filter-active {
   padding-top: 6px;
   padding-right: 22px;
   padding-left: 22px;
@@ -245,25 +278,34 @@ nav {
   gap: 10px;
 }
 
-/* .sm-icon-team {
-  --color4:var(--background-color-2nd);
-  background: #2196f3;
-  
-  padding: 12px;
+.sm-rounded-button-team-style {
+  --color5:#AFB1B8;
+  background: var(--white-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 128px;
   border: none;
-  border-radius: 8px;
-  
-} */
-
-/* .sm-icon-team:hover,
-.sm-rounded-button-team-style:hover {
---color4:var(--white-color);
-background:var(--brand-color);
+  padding-top: 12px;
+  padding-right: 12px;
+  padding-bottom: 12px;
+  padding-left: 12px;
+  cursor: pointer;
 }
 
-.sm-rounded-button-team-style {
-  
-} */
+.sm-rounded-button-team-style:hover {
+  --color5:var(--white-color);
+  background: #2196f3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 128px;
+  border: none;
+  padding-top: 12px;
+  padding-right: 12px;
+  padding-bottom: 12px;
+  padding-left: 12px;
+}
 
 .scope-of-work {
   font-weight: 400;
@@ -300,11 +342,7 @@ background:var(--brand-color);
   color: var(--body-text-color);
 }
 
-.contact-link:hover,
-.contact-link:focus {
-  text-decoration: none;
-  color: var(--brand-color);
-}
+
 
 .contact-links {
   display: inline-flex;
@@ -312,9 +350,16 @@ background:var(--brand-color);
   justify-content: space-between;
 }
 
-.contact-link-email-topbar {
+.contact-link-email-topbar,
+.contact-link-smartphone-topbar {
   display: flex;
   align-items: center;
+}
+
+.contact-link:hover,
+.contact-link:focus {
+  text-decoration: none;
+  color: var(--brand-color);
 }
 
 .contact-link-email-topbar:hover,
@@ -322,24 +367,12 @@ background:var(--brand-color);
 .contact-link-smartphone-topbar:hover,
 .contact-link-smartphone-topbar:focus {
   text-decoration: none;
-  --color3: var(--brand-color);
+  --color4: var(--brand-color);
 }
 
-.envelope-icon-topbar {
-  margin-right: 10px;
-}
-
-.contact-link-smartphone-topbar {
-  display: flex;
-  align-items: center;
-}
-
+.envelope-icon-topbar,
 .smartphone-icon-topbar {
   margin-right: 10px;
-}
-
-.nobull {
-  list-style-type: none;
 }
 
 .container {
@@ -412,6 +445,12 @@ header {
   gap: 30px;
 }
 
+.our-team {
+  background-color: var(--background-color-2nd);
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .our-clients-list {
   display: inline-flex;
   padding-top: 50px;
@@ -420,31 +459,15 @@ header {
   gap: 30px;
 }
 
-.our-clients-logo-item {
-  max-width: 170;
-  padding-top: 16px;
-  padding-right: 32px;
-  padding-bottom: 16px;
-  padding-left: 32px;
+.logo-our-clients {
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
 
-.our-team {
-  background-color: var(--background-color-2nd);
-  height: 648px;
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-h1,
-h2,
-h3,
-h4,
-p,
-ul {
-  padding: 0;
-  margin: 0;
+.logo-our-clients:hover {
+  --color3: var(--brand-color);
+  border: 1px solid var(--brand-color);
+  border-radius: 4px;
 }
 
 footer {

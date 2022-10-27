@@ -18,10 +18,10 @@
     <header>
       <div class="container">
         <div class="header-content">
-           <nav>
+          <nav>
             <a class="logotype" href="./index.html"
-            ><span class="piece-of-logotype">Web</span>Studio</a
-          >
+              ><span class="piece-of-logotype">Web</span>Studio</a
+            >
             <ul class="nobull main-menu">
               <li><a class="menu-item" href="#">Agencja</a></li>
               <li>
@@ -33,12 +33,20 @@
 
           <div>
             <ul class="nobull contact-links">
-              <li>
+              <li class="contact-link-email-topbar">
+                <svg class="envelope-icon-topbar" width="16" height="12">
+                  <use href="./images/icons/icons.svg#icon-envelope-icon"></use>
+                </svg>
                 <a class="contact-link" href="mailto:info@example.com"
                   >info@example.com</a
                 >
               </li>
-              <li>
+              <li class="contact-link-smartphone-topbar">
+                <svg class="smartphone-icon-topbar" width="10" height="16">
+                  <use
+                    href="./images/icons/icons.svg#icon-smartphone-icon"
+                  ></use>
+                </svg>
                 <a class="contact-link" href="tel:+48111111111"
                   >+48 111 111 111</a
                 >
@@ -212,27 +220,71 @@
     <footer>
       <div class="container">
         <div class="footer-content">
-          <a class="logotype-v2" href="./index.html"
-            ><span class="piece-of-logotype">Web</span>Studio</a
-          >
+          <div>
+            <a class="logotype-v2" href="./index.html"
+              ><span class="piece-of-logotype">Web</span>Studio</a
+            >
 
-          <address class="contact-info">
-            <div class="address-info">
-              <p>m. Warszawa, Aleje Jerozolimskie 21</p>
-            </div>
-            <ul class="nobull">
-              <li class="e-mail-link-in-footer">
-                <a class="contact-link" href="mailto:info@example.com"
-                  >info@example.com</a
-                >
+            <address class="contact-info">
+              <div class="address-info">
+                <p>m. Warszawa, Aleje Jerozolimskie 21</p>
+              </div>
+              <ul class="nobull">
+                <li class="e-mail-link-in-footer">
+                  <a class="contact-link" href="mailto:info@example.com"
+                    >info@example.com</a
+                  >
+                </li>
+                <li class="tel-link-in-footer">
+                  <a class="contact-link" href="tel:+48111111111"
+                    >+48 111 111 111</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+
+          <div class="social-media-box-footer">
+            <h3 class="social-media-icons-headline-footer">Dołącz do Nas</h3>
+            <ul class="nobull sm-icons-container-footer">
+              <li>
+                <button class="sm-rounded-button-footer-style" type="button">
+                  <svg class="sm-icon-footer" width="20" height="20">
+                    <use
+                      href="./images/icons/icons.svg#icon-instagram-icon"
+                    ></use>
+                  </svg>
+                </button>
               </li>
-              <li class="tel-link-in-footer">
-                <a class="contact-link" href="tel:+48111111111"
-                  >+48 111 111 111</a
-                >
+              <li>
+                <button class="sm-rounded-button-footer-style" type="button">
+                  <svg class="sm-icon-footer" width="20" height="20">
+                    <use
+                      href="./images/icons/icons.svg#icon-twitter-icon"
+                    ></use>
+                  </svg>
+                </button>
+              </li>
+              <li>
+                <button class="sm-rounded-button-footer-style" type="button">
+                  <svg class="sm-icon-footer" width="20" height="20">
+                    <use
+                      href="./images/icons/icons.svg#icon-facebook-icon"
+                    ></use>
+                  </svg>
+                </button>
+              </li>
+              <li>
+                <button class="sm-rounded-button-footer-style" type="button">
+                  <svg class="sm-icon-footer" width="20" height="20">
+                    <use
+                      href="./images/icons/icons.svg#icon-linkedin-icon"
+                    ></use>
+                  </svg>
+                </button>
               </li>
             </ul>
-          </address>
+          </div>
         </div>
       </div>
     </footer>
