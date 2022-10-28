@@ -279,7 +279,7 @@ nav {
 }
 
 .sm-rounded-button-team-style {
-  --color5:#AFB1B8;
+  --color5: #afb1b8;
   background: var(--white-color);
   display: flex;
   align-items: center;
@@ -294,7 +294,7 @@ nav {
 }
 
 .sm-rounded-button-team-style:hover {
-  --color5:var(--white-color);
+  --color5: var(--white-color);
   background: #2196f3;
   display: flex;
   align-items: center;
@@ -554,24 +554,41 @@ footer {
 
 .backdrop {
   position: fixed;
-  background-color: rgba(0, 0, 0, / 20%);
+  background-color: rgba(0, 0, 0, 0.2);
   height: 100%;
   width: 100%;
+  left: 0;
+  top: 0;
 }
 
 .is-hidden {
-visibility: hidden;
-opacity: 0;
-pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .modal {
-position: absolute;
-width: 528px;
-height: 581px;
-left: 536px;
-top: 221px;
+  position: absolute;
+  width: 528px;
+  height: 581px;
+  margin: auto;
+  background: var(--white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.close-btn {
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 6px;
+border-radius: 128px;
+border: 1px;
 background: #FFFFFF;
-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-border-radius: 4px;
+border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.close-btn svg {
+  
 }
