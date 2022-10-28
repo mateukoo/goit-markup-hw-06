@@ -351,12 +351,6 @@ nav {
   color: var(--body-text-color);
 }
 
-/* .contact-link-email-topbar,
-.contact-link-smartphone-topbar {
-  display: flex;
-  align-items: center;
-} */
-
 .contact-link:hover,
 .contact-link:focus {
   text-decoration: none;
@@ -518,7 +512,7 @@ footer {
 }
 
 .social-media-icons-headline-footer {
-  font-weight: 700;
+  font-weight: 500;
   font-size: 14px;
   line-height: 0.88;
   letter-spacing: 0.03em;
