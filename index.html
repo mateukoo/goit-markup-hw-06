@@ -65,7 +65,7 @@
             EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU
           </h1>
           <div class="button-cta-container">
-            <button class="button-cta" type="button">Zamów usługę</button>
+            <button class="button-cta" type="button" data-modal-open>Zamów usługę</button>
           </div>
         </div>
       </section>
@@ -472,5 +472,11 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-btn data-modal-close"></button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
