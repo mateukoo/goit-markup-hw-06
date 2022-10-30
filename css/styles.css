@@ -64,12 +64,13 @@ nav {
   letter-spacing: 0.02em;
   color: var(--headline-color);
   text-decoration: none;
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 
 .menu-item:hover,
 .menu-item:focus {
   color: var(--brand-color);
-  transition: 500ms;
 }
 
 .main-headline {
@@ -143,7 +144,7 @@ nav {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: 0;
   border-radius: 4px;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 1.88;
   font-size: 16px;
   display: inline-flex;
@@ -152,7 +153,15 @@ nav {
   letter-spacing: 0.06em;
   color: var(--white-color);
   cursor: pointer;
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
+
+.button-cta:hover {
+  background: var(--white-color);
+  color: var(--brand-color);
+}
+
 
 .button-cta-container {
   display: flex;
@@ -178,6 +187,8 @@ nav {
   letter-spacing: 0.03em;
   color: var(--headline-color);
   cursor: pointer;
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 .button-filter-unactive:hover,
 .button-filter-unactive:focus {
@@ -291,6 +302,8 @@ nav {
   padding-bottom: 12px;
   padding-left: 12px;
   cursor: pointer;
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 
 .sm-rounded-button-team-style:hover {
@@ -349,6 +362,8 @@ nav {
   letter-spacing: 0.02em;
   text-decoration: none;
   color: var(--body-text-color);
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 
 .contact-link:hover,
@@ -425,6 +440,35 @@ header {
   gap: 30px;
 }
 
+.what-we-de-content:nth-child(1),
+.what-we-de-content:nth-child(2),
+.what-we-de-content:nth-child(3) {
+  position: relative;
+  
+}
+
+.what-we-de-content > li > h3 {
+  position: absolute;
+  bottom: 4px;
+  background: rgba(47, 48, 58, 0.8);
+  display: flex;
+  justify-content: center;
+  flex-basis: calc(100% - (2 * 30px) / 3);
+  min-width: 370px;
+  max-width: 370px;
+  padding-top: 27px;
+  padding-right: 32px;
+  padding-bottom: 27px;
+  padding-left: 32px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+
 .team-members-card-list {
   display: inline-flex;
   padding-top: 50px;
@@ -450,6 +494,8 @@ header {
 .logo-our-clients {
   border: 1px solid #afb1b8;
   border-radius: 4px;
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 
 .logo-our-clients:hover {
@@ -491,6 +537,8 @@ footer {
   padding-bottom: 12px;
   padding-left: 12px;
   cursor: pointer;
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 
 .sm-rounded-button-footer-style:hover,
@@ -531,6 +579,9 @@ footer {
 
 .portfolio-work-item {
   flex-basis: calc((100% - 2 * 30px) / 3);
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+
 }
 
 .portfolio-work-item:hover,
@@ -571,7 +622,9 @@ footer {
   position: absolute;
   width: 528px;
   height: 581px;
-  margin: auto;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   background: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -579,16 +632,16 @@ footer {
 }
 
 .close-btn {
-display: flex;
-align-items: center;
-justify-content: center;
-padding: 6px;
-border-radius: 128px;
-border: 1px;
-background: #FFFFFF;
-border: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-.close-btn svg {
-  
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  border-radius: 128px;
+  border: 1px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  right: 8px;
+  top: 8px;
+  cursor: pointer;
 }
