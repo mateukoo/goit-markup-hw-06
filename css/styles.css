@@ -720,8 +720,8 @@ footer {
 
 .portfolio-work-item {
   flex-basis: calc((100% - 2 * 30px) / 3);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 700ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 700ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
 }
 
@@ -757,7 +757,7 @@ footer {
   letter-spacing: 0.03em;
   color: #ffffff;
   opacity: 0%;
-  transform: translatey(40px);
+  transform: translatey(24px);
 }
 
 .portfolio-work-item:hover .portfolio-work-item-overlay,
@@ -768,12 +768,13 @@ footer {
   border-left: 0px solid #eeeeee;
   border-right: 0px solid #eeeeee;
   border-bottom: 0px solid #eeeeee;
+  
 }
 .portfolio-work-item:hover .portfolio-work-item-overlay > p,
 .portfolio-work-item:focus .portfolio-work-item-overlay > p {
   opacity: 100%;
   transform: translatey(0px);
-  transition: opacity 600ms linear 250ms, transform 600ms;
+  transition: opacity 700ms linear 250ms, transform 800ms ease-in-out;
 }
 
 .portfolio-work-item:hover,
