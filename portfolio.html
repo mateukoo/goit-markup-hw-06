@@ -15,19 +15,22 @@
     />
   </head>
   <body>
-    <header>
+    <header class="header-portfolio">
       <div class="container">
         <div class="header-content">
           <nav>
             <a class="logotype" href="./index.html"
               ><span class="piece-of-logotype">Web</span>Studio</a
             >
-            <ul class="nobull main-menu">
-              <li><a class="menu-item" href="#">Agencja</a></li>
+            <ul class="nobull main-menu main-menu-portfolio-page">
+              <li class="main-menu-active-link-agency">
+                <a class="menu-item" href="./index.html">Agencja</a>
+              </li>
               <li>
-                <a class="menu-item" href="./portfolio.html">Portfolio</a>
+                <a class="menu-item main-menu-active-link-portfolio" href="./portfolio.html">Portfolio</a>
               </li>
               <li><a class="menu-item" href="#">Kontakt</a></li>
+              <li class="active-link"></li>
             </ul>
           </nav>
 
@@ -59,164 +62,254 @@
       </div>
     </header>
 
-
     <main>
-      <section class="section">
+      <section class="section portfolio-section">
         <div class="container">
-        <h2 class="hiddenheader">Portfolio</h2>
+          <h2 class="hiddenheader">Portfolio</h2>
 
-        <div class="filter-buttons-container">
-          <ul class="nobull filter-buttons-list">
-            <li>
-              <button class="button-filter-active" type="button">
-                Wszystkie
-              </button>
-            </li>
-            <li>
-              <button class="button-filter-unactive" type="button">
-                Strony internetowe
-              </button>
-            </li>
-            <li>
-              <button class="button-filter-unactive" type="button">
-                Aplikacje
-              </button>
-            </li>
-            <li>
-              <button class="button-filter-unactive" type="button">
-                Design
-              </button>
-            </li>
-            <li>
-              <button class="button-filter-unactive" type="button">
-                Marketing
-              </button>
-            </li>
-          </ul>
-        
+          <div class="filter-buttons-container">
+            <ul class="nobull filter-buttons-list">
+              <li>
+                <button class="button-filter-active" type="button">
+                  Wszystkie
+                </button>
+              </li>
+              <li>
+                <button class="button-filter-unactive" type="button">
+                  Strony internetowe
+                </button>
+              </li>
+              <li>
+                <button class="button-filter-unactive" type="button">
+                  Aplikacje
+                </button>
+              </li>
+              <li>
+                <button class="button-filter-unactive" type="button">
+                  Design
+                </button>
+              </li>
+              <li>
+                <button class="button-filter-unactive" type="button">
+                  Marketing
+                </button>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <ul class="nobull list-of-works">
+              <li class="portfolio-work-item">
+                <div class="portfolio-work-item-photo-container">
+                  <img
+                    src="./images/portfolio_thumbnails/img.jpg"
+                    alt="Projekt strony internetowej przedstawiony na laptopie"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="portfolio-work-item-overlay">
+                    <p>
+                      Technocrack jest popularną platformą wykorzystywaną do
+                      rozpowszechniania koronawirusa. Firmy wykorzystują tę
+                      platformę do celów szpiegowskich i ataków na
+                      niezabezpieczone serwery konkurencji
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio-work-item-description">
+                  <h3 class="project-name">Technocrack</h3>
+                  <p class="scope-of-work">Strona internetowa</p>
+                </div>
+              </li>
+
+              <li class="portfolio-work-item">
+                <div class="portfolio-work-item-photo-container">
+                  <img
+                    src="./images/portfolio_thumbnails/img-1.jpg"
+                    alt="Grafika przedstawiająca koszykarzy"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="portfolio-work-item-overlay">
+                    <p>
+                      Technocrack jest popularną platformą wykorzystywaną do
+                      rozpowszechniania koronawirusa. Firmy wykorzystują tę
+                      platformę do celów szpiegowskich i ataków na
+                      niezabezpieczone serwery konkurencji
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio-work-item-description">
+                  <h3 class="project-name">
+                    Grafika New Orlean vs Golden Star
+                  </h3>
+                  <p class="scope-of-work">Design</p>
+                </div>
+              </li>
+
+              <li class="portfolio-work-item">
+                <div class="portfolio-work-item-photo-container">
+                  <img
+                    src="./images/portfolio_thumbnails/img-2.jpg"
+                    alt="Grafika przedstawiająca logo restauracji"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="portfolio-work-item-overlay">
+                    <p>
+                      Technocrack jest popularną platformą wykorzystywaną do
+                      rozpowszechniania koronawirusa. Firmy wykorzystują tę
+                      platformę do celów szpiegowskich i ataków na
+                      niezabezpieczone serwery konkurencji
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio-work-item-description">
+                  <h3 class="project-name">Restauracja Seafood</h3>
+                  <p class="scope-of-work">Aplikacja</p>
+                </div>
+              </li>
+
+              <li class="portfolio-work-item">
+                <div class="portfolio-work-item-photo-container">
+                  <img
+                    src="./images/portfolio_thumbnails/img-3.jpg"
+                    alt="Zdjęcie słuchawek"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="portfolio-work-item-overlay">
+                    <p>
+                      Technocrack jest popularną platformą wykorzystywaną do
+                      rozpowszechniania koronawirusa. Firmy wykorzystują tę
+                      platformę do celów szpiegowskich i ataków na
+                      niezabezpieczone serwery konkurencji
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio-work-item-description">
+                  <h3 class="project-name">Projekt Prime</h3>
+                  <p class="scope-of-work">Marketing</p>
+                </div>
+              </li>
+
+              <li class="portfolio-work-item">
+                <div class="portfolio-work-item-photo-container">
+                  <img
+                    src="./images/portfolio_thumbnails/img-4.jpg"
+                    alt="Mock-up pudełek"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="portfolio-work-item-overlay">
+                    <p>
+                      Technocrack jest popularną platformą wykorzystywaną do
+                      rozpowszechniania koronawirusa. Firmy wykorzystują tę
+                      platformę do celów szpiegowskich i ataków na
+                      niezabezpieczone serwery konkurencji
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio-work-item-description">
+                  <h3 class="project-name">Projekt Boxes</h3>
+                  <p class="scope-of-work">Aplikacja</p>
+                </div>
+              </li>
+
+              <li class="portfolio-work-item">
+                <div class="portfolio-work-item-photo-container">
+                  <img
+                    src="./images/portfolio_thumbnails/img-5.jpg"
+                    alt="Mock-up pudełek"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="portfolio-work-item-overlay">
+                    <p>
+                      Technocrack jest popularną platformą wykorzystywaną do
+                      rozpowszechniania koronawirusa. Firmy wykorzystują tę
+                      platformę do celów szpiegowskich i ataków na
+                      niezabezpieczone serwery konkurencji
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio-work-item-description">
+                  <h3 class="project-name">Inspiration has no Borders</h3>
+                  <p class="scope-of-work">Strona internetowa</p>
+                </div>
+              </li>
+
+              <li class="portfolio-work-item">
+                <div class="portfolio-work-item-photo-container">
+                  <img
+                    src="./images/portfolio_thumbnails/img-6.jpg"
+                    alt="Mock-up magazynu"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="portfolio-work-item-overlay">
+                    <p>
+                      Technocrack jest popularną platformą wykorzystywaną do
+                      rozpowszechniania koronawirusa. Firmy wykorzystują tę
+                      platformę do celów szpiegowskich i ataków na
+                      niezabezpieczone serwery konkurencji
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio-work-item-description">
+                  <h3 class="project-name">Magazyn Limited Edition</h3>
+                  <p class="scope-of-work">Design</p>
+                </div>
+              </li>
+
+              <li class="portfolio-work-item">
+                <div class="portfolio-work-item-photo-container">
+                  <img
+                    src="./images/portfolio_thumbnails/img-7.jpg"
+                    alt="Mock-up etykiety"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="portfolio-work-item-overlay">
+                    <p>
+                      Technocrack jest popularną platformą wykorzystywaną do
+                      rozpowszechniania koronawirusa. Firmy wykorzystują tę
+                      platformę do celów szpiegowskich i ataków na
+                      niezabezpieczone serwery konkurencji
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio-work-item-description">
+                  <h3 class="project-name">Projekt LAB</h3>
+                  <p class="scope-of-work">Marketing</p>
+                </div>
+              </li>
+
+              <li class="portfolio-work-item">
+                <div class="portfolio-work-item-photo-container">
+                  <img
+                    src="./images/portfolio_thumbnails/img-8.jpg"
+                    alt="Laptop"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="portfolio-work-item-overlay">
+                    <p>
+                      Technocrack jest popularną platformą wykorzystywaną do
+                      rozpowszechniania koronawirusa. Firmy wykorzystują tę
+                      platformę do celów szpiegowskich i ataków na
+                      niezabezpieczone serwery konkurencji
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio-work-item-description">
+                  <h3 class="project-name">Growing Business</h3>
+                  <p class="scope-of-work">Aplikacja</p>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
-
-        <div>
-        <ul class="nobull list-of-works">
-          <li class="portfolio-work-item">
-            <img
-              src="./images/portfolio_thumbnails/img.jpg"
-              alt="Projekt strony internetowej przedstawiony na laptopie"
-              width="370"
-              height="294"
-            />
-            <div class="portfolio-work-item-description">
-            <h3 class="project-name">Technocrack</h3>
-            <p class="scope-of-work">Strona internetowa</p>
-          </div>
-          </li>
-
-          <li class="portfolio-work-item">
-            <img
-              src="./images/portfolio_thumbnails/img-1.jpg"
-              alt="Grafika przedstawiająca koszykarzy"
-              width="370"
-              height="294"
-            />
-            <div class="portfolio-work-item-description">
-            <h3 class="project-name">Grafika New Orlean vs Golden Star</h3>
-            <p class="scope-of-work">Design</p>
-          </div>
-          </li>
-
-          <li class="portfolio-work-item">
-            <img
-              src="./images/portfolio_thumbnails/img-2.jpg"
-              alt="Grafika przedstawiająca logo restauracji"
-              width="370"
-              height="294"
-            />
-            <div class="portfolio-work-item-description">
-            <h3 class="project-name">Restauracja Seafood</h3>
-            <p class="scope-of-work">Aplikacja</p>
-            </div>
-          </li>
-
-          <li class="portfolio-work-item">
-            <img
-              src="./images/portfolio_thumbnails/img-3.jpg"
-              alt="Zdjęcie słuchawek"
-              width="370"
-              height="294"
-            />
-            <div class="portfolio-work-item-description">
-            <h3 class="project-name">Projekt Prime</h3>
-            <p class="scope-of-work">Marketing</p>
-          </div>
-          </li>
-
-          <li class="portfolio-work-item">
-            <img
-              src="./images/portfolio_thumbnails/img-4.jpg"
-              alt="Mock-up pudełek"
-              width="370"
-              height="294"
-            />
-            <div class="portfolio-work-item-description">
-            <h3 class="project-name">Projekt Boxes</h3>
-            <p class="scope-of-work">Aplikacja</p>
-          </div>
-          </li>
-
-          <li class="portfolio-work-item">
-            <img
-              src="./images/portfolio_thumbnails/img-5.jpg"
-              alt="Mock-up pudełek"
-              width="370"
-              height="294"
-            />
-            <div class="portfolio-work-item-description">
-            <h3 class="project-name">Inspiration has no Borders</h3>
-            <p class="scope-of-work">Strona internetowa</p>
-          </div>
-          </li>
-
-          <li class="portfolio-work-item">
-            <img
-              src="./images/portfolio_thumbnails/img-6.jpg"
-              alt="Mock-up magazynu"
-              width="370"
-              height="294"
-            />
-            <div class="portfolio-work-item-description">
-            <h3 class="project-name">Magazyn Limited Edition</h3>
-            <p class="scope-of-work">Design</p>
-            </div>
-          </li>
-
-          <li class="portfolio-work-item">
-            <img
-              src="./images/portfolio_thumbnails/img-7.jpg"
-              alt="Mock-up etykiety"
-              width="370"
-              height="294"
-            />
-            <div class="portfolio-work-item-description">
-            <h3 class="project-name">Projekt LAB</h3>
-            <p class="scope-of-work">Marketing</p>
-            </div>
-          </li>
-
-          <li class="portfolio-work-item">
-            <img
-              src="./images/portfolio_thumbnails/img-8.jpg"
-              alt="Laptop"
-              width="370"
-              height="294"
-            />
-            <div class="portfolio-work-item-description">
-            <h3 class="project-name">Growing Business</h3>
-            <p class="scope-of-work">Aplikacja</p>
-          </li>
-        </div>
-        </ul>
-      </div>
-    </div>
       </section>
     </main>
     <footer>
