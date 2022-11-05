@@ -264,23 +264,23 @@ nav {
   display: inline-flex;
   gap: 30px;
 }
-.brand-values-icon-set {
-  display: inline-flex;
-  gap: 30px;
-  margin-bottom: 30px;
-}
 
-.brand-values-icon-set li:nth-child(1),
-.brand-values-icon-set li:nth-child(2),
-.brand-values-icon-set li:nth-child(3),
-.brand-values-icon-set li:nth-child(4) {
-  background-color: #f5f4fa;
+.brand-values-icon-box {
+  background: #f5f4fa;
   border-radius: 4px;
   padding-top: 25px;
   padding-right: 100px;
   padding-bottom: 25px;
   padding-left: 100px;
+  margin-bottom: 30px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.brand-values-icon-box:hover {
+  transform: scale(80%);
+}
+
+
 
 .hiddenheader {
   display: none;
@@ -323,7 +323,7 @@ nav {
   letter-spacing: 0.06em;
   color: var(--white-color);
   cursor: pointer;
-  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background cubic-bezier(0.4, 0, 0.2, 1), color cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
 }
 
@@ -512,21 +512,25 @@ nav {
   gap: 30px;
 }
 
-.what-we-de-content:nth-child(1),
-.what-we-de-content:nth-child(2),
-.what-we-de-content:nth-child(3) {
+.what-we-de-content li:nth-child(1),
+.what-we-de-content li:nth-child(2),
+.what-we-de-content li:nth-child(3) {
   position: relative;
+}
+
+.what-we-de-content img {
+  display: block;
 }
 
 .what-we-de-content > li > h3 {
   position: absolute;
-  bottom: 4px;
+  bottom: 0px;
   background: rgba(47, 48, 58, 0.8);
   display: flex;
   justify-content: center;
-  flex-basis: calc(100% - (2 * 30px) / 3);
-  min-width: 370px;
-  max-width: 370px;
+  /* min-width: 370px;
+  max-width: 370px; */
+  width: 100%;
   padding-top: 27px;
   padding-right: 32px;
   padding-bottom: 27px;
