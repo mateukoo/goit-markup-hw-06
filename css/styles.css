@@ -1,11 +1,14 @@
 :root {
+  --brand-color-gradient: linear-gradient(270deg, #274EF0 0%, #FF6B00 100%);
+
   --brand-color: #2196f3;
   --brand-secondary-color: #000000;
   --body-text-color: #757575;
-  --headline-color: #212121;
-  --background-color: #2f303a;
+  --headline-color: #202020;
+  --background-color: #202020;
   --background-color-2nd: #f5f4fa;
   --white-color: #ffffff;
+  --border-style: 2px solid #2a2a2a;
 }
 
 h1,
@@ -25,6 +28,7 @@ ul {
 body {
   font-family: "Roboto", "Raleway", sans-serif;
   color: #212121;
+  background-color: #C6C6C6;
 }
 
 @keyframes slideInFromTop {
@@ -37,34 +41,35 @@ body {
 }
 
 header {
-  animation: 2s ease-out 0s 1 slideInFromTop;
+  animation: 700ms ease-out 0s 1 slideInFromTop;
+  background-color: #C6C6C6;
 }
 
 main .main-banner,
 .brand-values,
 .portfolio-section {
-  animation: 2s ease-out 0s 1 mainIsHiddenOnload, 2s ease-out 2s 1 fadeIn;
+  animation: 1.5s ease-out 0s 1 mainIsHiddenOnload, 1s ease-out 1.5s 1 fadeIn;
 }
 
 @keyframes mainIsHiddenOnload {
   0% {
     opacity: 0%;
-    transform: translatey(80px);
+    transform: translatey(50px);
   }
   100% {
     opacity: 0%;
-    transform: translatey(80px);
+    transform: translatey(50px);
   }
 }
 
 @keyframes fadeIn {
   0% {
     opacity: 0%;
-    transform: translatey(80px) scale(93%) skew(2deg);
+    transform: translatey(50px) scale(95%) skew(2deg) rotate(-1deg);
   }
   100% {
     opacity: 100%;
-    transform: translatey(0) scale(100%) skew(0deg);
+    transform: translatey(0) scale(100%) skew(0deg) rotate(0deg);
   }
 }
 
@@ -105,6 +110,12 @@ nav {
   gap: 10px;
 }
 
+.contact-link-email-topbar,
+.contact-link-smartphone-topbar {
+  display: flex;
+  align-items: center;
+}
+
 .contact-link:hover,
 .contact-link:focus {
   fill: var(--brand-color);
@@ -115,7 +126,7 @@ nav {
 .header-portfolio {
   position: fixed;
   margin: 0 auto;
-  background-color: var(--white-color);
+  background-color: #C6C6C6;
   height: 80px;
   min-width: 100%;
   display: flex;
@@ -129,7 +140,7 @@ nav {
 .header-home {
   position: fixed;
   margin: 0 auto;
-  background-color: var(--white-color);
+  background-color: #C6C6C6;
   min-height: 80px;
   min-width: 100%;
   display: flex;
@@ -167,7 +178,10 @@ nav {
 }
 
 .piece-of-logotype {
-  color: var(--brand-color);
+  background: linear-gradient(270deg, #274EF0 0%, #FF6B00 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
   text-decoration: none;
 }
 
@@ -519,7 +533,6 @@ nav {
 
 .sm-rounded-button-team-style {
   fill: #afb1b8;
-  background: var(--white-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -641,8 +654,8 @@ nav {
 
 .team-member-card {
   background: var(--white-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2); */
   border-radius: 0px 0px 4px 4px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 800ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -711,9 +724,22 @@ nav {
 }
 
 .our-team {
-  background-color: var(--background-color-2nd);
+  background: #C6C6C6;
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.our-team > div > p:nth-of-type(1) {
+  text-align: center;
+  font-size: 20px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: var(--body-text-color);
+  padding-top: 0px;
+  padding-top: 50px;
+  /* padding-bottom: 72px; */
+  margin: 0 auto;
+  max-width: 696px;
 }
 
 .our-clients-section {
@@ -727,6 +753,7 @@ nav {
 
 .our-clients-section h2 {
   padding-bottom: 50px;
+  color: #eeeeee;
 }
 
 .our-clients-section > div > p:nth-of-type(1) {
@@ -766,8 +793,8 @@ nav {
 }
 
 .logo-our-clients {
-  border: 2px solid #efefef;
-  fill: #afb1b8;
+  border: 2px solid #2a2a2a;
+  fill: var(--body-text-color);
   border-radius: 4px;
   transition: cubic-bezier(0.4, 0, 0.2, 1);
   transform: scale(1);
@@ -777,7 +804,7 @@ nav {
 }
 
 .logo-our-clients:hover {
-  background-color: var(--white-color);
+  background-color: var(--headline-color);
   fill: var(--brand-color);
   border: 2px solid var(--brand-color);
   border-radius: 50%;
@@ -832,16 +859,16 @@ footer {
 
 .sm-rounded-button-footer-style-bg {
   background-color: rgba(255, 255, 255, 0.1);
+  border: var(--border-style);
 }
 
 .sm-rounded-button-footer-style {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(255, 255, 255, 0.1);
-  background-size: 0%;
+   border: var(--border-style);
   border-radius: 128px;
-  border: none;
+  background-color: none;
   padding-top: 12px;
   padding-right: 12px;
   padding-bottom: 12px;
