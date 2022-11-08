@@ -18,6 +18,26 @@
       href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <script>
+      var $cursor = $(".cursor");
+
+      function moveCursor(e) {
+        $cursor.addClass("is-moving");
+        $cursor.css({ top: e.pageY, left: e.pageX });
+
+        clearTimeout(timer2);
+
+        var timer2 = setTimeout(function () {
+          $cursor.removeClass("is-moving");
+        }, 300);
+      }
+
+      $(window).on("mousemove", moveCursor);
+    </script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+    ></script>
   </head>
 
   <body>
@@ -553,9 +573,6 @@
         </div>
       </div>
     </div>
-
-    <script src="./js/cursor.js"></script>
-    <script src="./js/jquery.min.js"></script>
 
     <script src="./js/modal.js"></script>
   </body>
