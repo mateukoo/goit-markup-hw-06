@@ -3,547 +3,560 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>WebStudio</title>
+    <link rel="stylesheet" href="./css/cursor.css" />
     <link rel="stylesheet" href="./css/modern-normalize.css" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/scroll.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:ital,wght@0,400;0,500;0,900;1,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
   </head>
+
   <body>
-    <header class="header-home">
-      <div class="container">
+    <div class="cursor is-moving"></div>
+
+    <div class="content_cursor">
+      <header class="header-home">
         <div class="header-content">
+          <a class="logotype" href="./index.html"
+            ><span class="piece-of-logotype">web</span>.studio</a
+          >
           <nav>
-            <a class="logotype" href="./index.html"
-              ><span class="piece-of-logotype">Web</span>Studio</a
-            >
             <ul class="nobull main-menu">
               <li>
                 <a class="menu-item main-menu-active-link-agency" href="#"
-                  >Agencja</a
+                  >.agency</a
                 >
               </li>
               <li>
-                <a class="menu-item" href="./portfolio.html">Portfolio</a>
+                <a class="menu-item" href="./portfolio.html">.works</a>
               </li>
-              <li><a class="menu-item" href="#">Kontakt</a></li>
+              <li><a class="menu-item" href="#">.services</a></li>
+              <li><a class="menu-item" href="#">.about us</a></li>
+              <li><a class="menu-item" href="#">.contact</a></li>
               <li class="active-link"></li>
             </ul>
           </nav>
 
-          <div>
-            <ul class="nobull contact-links">
-              <li class="contact-link-email-topbar">
-                <a class="contact-link" href="mailto:info@example.com">
-                  <svg class="envelope-icon-topbar" width="16" height="12">
-                    <use
-                      href="./images/icons/icons.svg#icon-envelope-icon"
-                    ></use>
-                  </svg>
-                  info@example.com</a
-                >
-              </li>
-              <li class="contact-link-smartphone-topbar">
-                <a class="contact-link" href="tel:+48111111111">
-                  <svg class="smartphone-icon-topbar" width="10" height="16">
-                    <use
-                      href="./images/icons/icons.svg#icon-smartphone-icon"
-                    ></use>
-                  </svg>
-                  +48 111 111 111</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <main>
-      <section class="main-banner">
-        <div class="container">
-          <h1 class="main-headline">
-            EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU
-          </h1>
-          <div class="button-cta-container">
-            <button class="button-cta" type="button" data-modal-open>
-              Zamów usługę
-            </button>
-          </div>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="container">
-          <h2 class="hiddenheader">Services</h2>
-
-          <ul class="body-text brand-values nobull">
-            <li>
-              <div class="brand-values-icon-box">
-                <svg class="antenna-icon-brand-values" width="70" height="70">
-                  <use href="./images/icons/icons.svg#icon-antenna-icon"></use>
-                </svg>
-              </div>
-              <h3 class="bodytext-headline">LOREM IPSUM</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-                arcu sem. Sed non sodales dui. Interdum et malesuada
-              </p>
-            </li>
-            <li>
-              <div class="brand-values-icon-box">
-                <svg class="clock-icon-brand-values" width="70" height="70">
-                  <use href="./images/icons/icons.svg#icon-clock-icon"></use>
-                </svg>
-              </div>
-              <h3 class="bodytext-headline">LOREM IPSUM</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-                arcu sem. Sed non sodales dui. Interdum et malesuada
-              </p>
-            </li>
-            <li>
-              <div class="brand-values-icon-box">
-                <svg class="diagram-icon-brand-values" width="70" height="70">
-                  <use href="./images/icons/icons.svg#icon-diagram-icon"></use>
-                </svg>
-              </div>
-              <h3 class="bodytext-headline">LOREM IPSUM</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-                arcu sem. Sed non sodales dui. Interdum et malesuada
-              </p>
-            </li>
-            <li>
-              <div class="brand-values-icon-box">
-                <svg class="astronaut-icon-brand-values" width="70" height="70">
-                  <use
-                    href="./images/icons/icons.svg#icon-astronaut-icon"
-                  ></use>
-                </svg>
-              </div>
-              <h3 class="bodytext-headline">LOREM IPSUM</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-                arcu sem. Sed non sodales dui. Interdum et malesuada
-              </p>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="container">
-          <h2 class="secondary-headline">Czym się zajmujemy?</h2>
-
-          <ul class="nobull what-we-de-content">
-            <li>
-              <h3>Aplikacje Komputerowe</h3>
-              <img
-                src="./images/box-1.jpg"
-                alt="Palce dłoni uderzające w przyciski na klawiaturze"
-                width="370"
-                height="294"
-              />
-            </li>
-            <li>
-              <h3>Aplikacje Mobilne</h3>
-              <img
-                src="./images/box-2.jpg"
-                alt="Projektowanie makiety interfejsu na laptopie"
-                width="370"
-                height="294"
-              />
-            </li>
-            <li>
-              <h3>Rozwiązania Graficzne</h3>
-              <img
-                src="./images/box-3.jpg"
-                alt="Projektowanie graficzne na tablecie"
-                width="370"
-                height="294"
-              />
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="section our-team">
-        <div class="container">
-          <h2 class="secondary-headline">Nasz Zespół</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-            arcu sem. Sed non sodales dui. Interdum et malesuada
-          </p>
-          <ul class="nobull team-members-card-list">
-            <li class="team-member-card">
-              <div
-                class="team-member-card-photo-container team-member-card-gradient-overlay-container"
-              >
-                <img
-                  src="./images/img.jpg"
-                  alt="Członek zespołu"
-                  width="270"
-                  height="260"
-                />
-                <div class="gradient-overlay"></div>
-              </div>
-              <h3 class="team-member-name">John Doe</h3>
-              <p class="work-position">Product Designer</p>
-              <ul class="nobull sm-icons-container-our-team">
-                <li>
-                  <button class="sm-rounded-button-team-style" type="button">
-                    <svg class="sm-icon-team" width="20" height="20">
-                      <use
-                        href="./images/icons/icons.svg#icon-instagram-icon"
-                      ></use>
-                    </svg>
-                  </button>
-                </li>
-                <li>
-                  <button class="sm-rounded-button-team-style" type="button">
-                    <svg class="sm-icon-team" width="20" height="20">
-                      <use
-                        href="./images/icons/icons.svg#icon-twitter-icon"
-                      ></use>
-                    </svg>
-                  </button>
-                </li>
-                <li>
-                  <button class="sm-rounded-button-team-style" type="button">
-                    <svg class="sm-icon-team" width="20" height="20">
-                      <use
-                        href="./images/icons/icons.svg#icon-facebook-icon"
-                      ></use>
-                    </svg>
-                  </button>
-                </li>
-                <li>
-                  <button class="sm-rounded-button-team-style" type="button">
-                    <svg class="sm-icon-team" width="20" height="20">
-                      <use
-                        href="./images/icons/icons.svg#icon-linkedin-icon"
-                      ></use>
-                    </svg>
-                  </button>
-                </li>
-              </ul>
-            </li>
-            <li class="team-member-card">
-              <div
-                class="team-member-card-photo-container team-member-card-gradient-overlay-container"
-              >
-                <img
-                  src="./images/img-1.jpg"
-                  alt="Członek zespołu"
-                  width="270"
-                  height="260"
-                />
-                <div class="gradient-overlay"></div>
-              </div>
-              <h3 class="team-member-name">John Doe</h3>
-              <p class="work-position">Front End Developer</p>
-              <ul class="nobull sm-icons-container-our-team">
-                <li>
-                  <button class="sm-rounded-button-team-style" type="button">
-                    <svg class="sm-icon-team" width="20" height="20">
-                      <use
-                        href="./images/icons/icons.svg#icon-instagram-icon"
-                      ></use>
-                    </svg>
-                  </button>
-                </li>
-                <li>
-                  <button class="sm-rounded-button-team-style" type="button">
-                    <svg class="sm-icon-team" width="20" height="20">
-                      <use
-                        href="./images/icons/icons.svg#icon-twitter-icon"
-                      ></use>
-                    </svg>
-                  </button>
-                </li>
-                <li>
-                  <button class="sm-rounded-button-team-style" type="button">
-                    <svg class="sm-icon-team" width="20" height="20">
-                      <use
-                        href="./images/icons/icons.svg#icon-facebook-icon"
-                      ></use>
-                    </svg>
-                  </button>
-                </li>
-                <li>
-                  <button class="sm-rounded-button-team-style" type="button">
-                    <svg class="sm-icon-team" width="20" height="20">
-                      <use
-                        href="./images/icons/icons.svg#icon-linkedin-icon"
-                      ></use>
-                    </svg>
-                  </button>
-                </li>
-              </ul>
-            </li>
-            <li class="team-member-card">
-              <div
-                class="team-member-card-photo-container team-member-card-gradient-overlay-container"
-              >
-                <img
-                  src="./images/img-2.jpg"
-                  alt="Członek zespołu"
-                  width="270"
-                  height="260"
-                />
-                <div class="gradient-overlay"></div>
-              </div>
-              <h3 class="team-member-name">John Doe</h3>
-              <p class="work-position">Marketing</p>
-              <ul class="nobull sm-icons-container-our-team">
-                <li>
-                  <button class="sm-rounded-button-team-style" type="button">
-                    <svg class="sm-icon-team" width="20" height="20">
-                      <use
-                        href="./images/icons/icons.svg#icon-instagram-icon"
-                      ></use>
-                    </svg>
-                  </button>
-                </li>
-                <li>
-                  <button class="sm-rounded-button-team-style" type="button">
-                    <svg class="sm-icon-team" width="20" height="20">
-                      <use
-                        href="./images/icons/icons.svg#icon-twitter-icon"
-                      ></use>
-                    </svg>
-                  </button>
-                </li>
-                <li>
-                  <button class="sm-rounded-button-team-style" type="button">
-                    <svg class="sm-icon-team" width="20" height="20">
-                      <use
-                        href="./images/icons/icons.svg#icon-facebook-icon"
-                      ></use>
-                    </svg>
-                  </button>
-                </li>
-                <li>
-                  <button class="sm-rounded-button-team-style" type="button">
-                    <svg class="sm-icon-team" width="20" height="20">
-                      <use
-                        href="./images/icons/icons.svg#icon-linkedin-icon"
-                      ></use>
-                    </svg>
-                  </button>
-                </li>
-              </ul>
-            </li>
-            <li class="team-member-card">
-              <div
-                class="team-member-card-photo-container team-member-card-gradient-overlay-container"
-              >
-                <img
-                  src="./images/img-3.jpg"
-                  alt="Członek zespołu"
-                  width="270"
-                  height="260"
-                />
-                <div class="gradient-overlay"></div>
-              </div>
-              <h3 class="team-member-name">John Doe</h3>
-              <p class="work-position">UI Designer</p>
-              <ul class="nobull sm-icons-container-our-team">
-                <li>
-                  <button class="sm-rounded-button-team-style" type="button">
-                    <svg class="sm-icon-team" width="20" height="20">
-                      <use
-                        href="./images/icons/icons.svg#icon-instagram-icon"
-                      ></use>
-                    </svg>
-                  </button>
-                </li>
-                <li>
-                  <button class="sm-rounded-button-team-style" type="button">
-                    <svg class="sm-icon-team" width="20" height="20">
-                      <use
-                        href="./images/icons/icons.svg#icon-twitter-icon"
-                      ></use>
-                    </svg>
-                  </button>
-                </li>
-                <li>
-                  <button class="sm-rounded-button-team-style" type="button">
-                    <svg class="sm-icon-team" width="20" height="20">
-                      <use
-                        href="./images/icons/icons.svg#icon-facebook-icon"
-                      ></use>
-                    </svg>
-                  </button>
-                </li>
-                <li>
-                  <button class="sm-rounded-button-team-style" type="button">
-                    <svg class="sm-icon-team" width="20" height="20">
-                      <use
-                        href="./images/icons/icons.svg#icon-linkedin-icon"
-                      ></use>
-                    </svg>
-                  </button>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="section our-clients-section">
-        <div>
-          <h2 class="secondary-headline">Nasi klienci</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-            arcu sem. Sed non sodales dui. Interdum et malesuada
-          </p>
-
-          <ul class="nobull our-clients-list">
-            <li>
-              <svg class="logo-our-clients" width="200" height="200">
-                <use href="./images/icons/icons.svg#icon-client-1"></use>
+          <div class="contact-links">
+            <!-- <ul class="nobull">
+            <li> -->
+            <a class="contact-link-email-topbar" href="mailto:info@example.com">
+              <svg class="envelope-icon-topbar" width="32" height="24">
+                <use href="./images/icons/icons.svg#icon-envelope-icon"></use>
               </svg>
-            </li>
-            <li>
-              <svg class="logo-our-clients" width="200" height="200">
-                <use href="./images/icons/icons.svg#icon-client-2"></use>
-              </svg>
-            </li>
-            <li>
-              <svg class="logo-our-clients" width="200" height="200">
-                <use href="./images/icons/icons.svg#icon-client-3"></use>
-              </svg>
-            </li>
-            <li>
-              <svg class="logo-our-clients" width="200" height="200">
-                <use href="./images/icons/icons.svg#icon-client-4"></use>
-              </svg>
-            </li>
-            <li>
-              <svg class="logo-our-clients" width="200" height="200">
-                <use href="./images/icons/icons.svg#icon-client-5"></use>
-              </svg>
-            </li>
-            <li>
-              <svg class="logo-our-clients" width="200" height="200">
-                <use href="./images/icons/icons.svg#icon-client-6"></use>
-              </svg>
-            </li>
-            <li>
-              <svg class="logo-our-clients" width="200" height="200">
-                <use href="./images/icons/icons.svg#icon-client-3"></use>
-              </svg>
-            </li>
-            <li>
-              <svg class="logo-our-clients" width="200" height="200">
-                <use href="./images/icons/icons.svg#icon-client-4"></use>
-              </svg>
-            </li>
-            <li>
-              <svg class="logo-our-clients" width="200" height="200">
-                <use href="./images/icons/icons.svg#icon-client-5"></use>
-              </svg>
-            </li>
-            <li>
-              <svg class="logo-our-clients" width="200" height="200">
-                <use href="./images/icons/icons.svg#icon-client-6"></use>
-              </svg>
-            </li>
-          </ul>
-        </div>
-      </section>
-    </main>
-
-    <footer>
-      <div class="container">
-        <div class="footer-content">
-          <div>
-            <a class="logotype-v2" href="./index.html"
-              ><span class="piece-of-logotype">Web</span>Studio</a
+              info@example.com</a
             >
-
-            <address class="contact-info">
-              <div class="address-info">
-                <p>m. Warszawa, Aleje Jerozolimskie 21</p>
-              </div>
-              <ul class="nobull">
-                <li class="e-mail-link-in-footer">
-                  <a class="contact-link" href="mailto:info@example.com"
-                    >info@example.com</a
-                  >
-                </li>
-                <li class="tel-link-in-footer">
-                  <a class="contact-link" href="tel:+48111111111"
-                    >+48 111 111 111</a
-                  >
-                </li>
-              </ul>
-            </address>
+            <!-- </li> -->
+            <!-- <li class="button-cta-container"> -->
+            <button class="button-cta" type="button" data-modal-open>
+              Enquire now
+            </button>
+            <!-- </li> -->
+            <!-- </ul> -->
           </div>
+        </div>
+      </header>
 
-          <div class="social-media-box-footer">
-            <h3 class="social-media-icons-headline-footer">Dołącz do Nas</h3>
-            <ul class="nobull sm-icons-container-footer">
+      <main>
+        <section class="main-banner-content">
+          <div class="main-banner-photo">
+            <h1 class="main-headline">Digital solutions for your businesses</h1>
+            <div class="main-banner-photo-overlay"></div>
+            <div class="main-banner-photo-overlay-2"></div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="container">
+            <h2 class="hiddenheader">brand values</h2>
+
+            <ul class="body-text brand-values nobull">
               <li>
-                <button class="sm-rounded-button-footer-style" type="button">
-                  <svg class="sm-icon-footer" width="20" height="20">
+                <div class="brand-values-icon-box">
+                  <svg class="antenna-icon-brand-values" width="70" height="70">
                     <use
-                      href="./images/icons/icons.svg#icon-instagram-icon"
+                      href="./images/icons/icons.svg#icon-antenna-icon"
                     ></use>
                   </svg>
-                </button>
+                </div>
+                <h3 class="bodytext-headline">LOREM IPSUM</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                  vel arcu sem. Sed non sodales dui. Interdum et malesuada
+                </p>
               </li>
               <li>
-                <button class="sm-rounded-button-footer-style" type="button">
-                  <svg class="sm-icon-footer" width="20" height="20">
-                    <use
-                      href="./images/icons/icons.svg#icon-twitter-icon"
-                    ></use>
+                <div class="brand-values-icon-box">
+                  <svg class="clock-icon-brand-values" width="70" height="70">
+                    <use href="./images/icons/icons.svg#icon-clock-icon"></use>
                   </svg>
-                </button>
+                </div>
+                <h3 class="bodytext-headline">LOREM IPSUM</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                  vel arcu sem. Sed non sodales dui. Interdum et malesuada
+                </p>
               </li>
               <li>
-                <button
-                  class="sm-rounded-button-footer-style sm-rounded-button-footer-style-bg"
-                  type="button"
-                >
-                  <svg class="sm-icon-footer" width="20" height="20">
+                <div class="brand-values-icon-box">
+                  <svg class="diagram-icon-brand-values" width="70" height="70">
                     <use
-                      href="./images/icons/icons.svg#icon-facebook-icon"
+                      href="./images/icons/icons.svg#icon-diagram-icon"
                     ></use>
                   </svg>
-                </button>
+                </div>
+                <h3 class="bodytext-headline">LOREM IPSUM</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                  vel arcu sem. Sed non sodales dui. Interdum et malesuada
+                </p>
               </li>
               <li>
-                <button class="sm-rounded-button-footer-style" type="button">
-                  <svg class="sm-icon-footer" width="20" height="20">
+                <div class="brand-values-icon-box">
+                  <svg
+                    class="astronaut-icon-brand-values"
+                    width="70"
+                    height="70"
+                  >
                     <use
-                      href="./images/icons/icons.svg#icon-linkedin-icon"
+                      href="./images/icons/icons.svg#icon-astronaut-icon"
                     ></use>
                   </svg>
-                </button>
+                </div>
+                <h3 class="bodytext-headline">LOREM IPSUM</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                  vel arcu sem. Sed non sodales dui. Interdum et malesuada
+                </p>
               </li>
             </ul>
           </div>
-        </div>
-      </div>
-    </footer>
+        </section>
 
-    <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
-        <button type="button" class="close-btn" data-modal-close>
-          <svg class="icon-x-close-modal-icon" width="18" height="18">
-            <use href="./images/icons/icons.svg#icon-x-close-modal-icon"></use>
-          </svg>
-        </button>
+        <section class="section">
+          <div class="container">
+            <h2 class="secondary-headline">Czym się zajmujemy?</h2>
+
+            <ul class="nobull what-we-de-content">
+              <li>
+                <h3>Aplikacje Komputerowe</h3>
+                <img
+                  src="./images/box-1.jpg"
+                  alt="Palce dłoni uderzające w przyciski na klawiaturze"
+                  width="370"
+                  height="294"
+                />
+              </li>
+              <li>
+                <h3>Aplikacje Mobilne</h3>
+                <img
+                  src="./images/box-2.jpg"
+                  alt="Projektowanie makiety interfejsu na laptopie"
+                  width="370"
+                  height="294"
+                />
+              </li>
+              <li>
+                <h3>Rozwiązania Graficzne</h3>
+                <img
+                  src="./images/box-3.jpg"
+                  alt="Projektowanie graficzne na tablecie"
+                  width="370"
+                  height="294"
+                />
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="section our-team">
+          <div class="container">
+            <h2 class="secondary-headline">Nasz Zespół</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+              arcu sem. Sed non sodales dui. Interdum et malesuada
+            </p>
+            <ul class="nobull team-members-card-list">
+              <li class="team-member-card">
+                <div
+                  class="team-member-card-photo-container team-member-card-gradient-overlay-container"
+                >
+                  <img
+                    src="./images/img.jpg"
+                    alt="Członek zespołu"
+                    width="270"
+                    height="260"
+                  />
+                  <div class="gradient-overlay"></div>
+                </div>
+                <h3 class="team-member-name">John Doe</h3>
+                <p class="work-position">Product Designer</p>
+                <ul class="nobull sm-icons-container-our-team">
+                  <li>
+                    <button class="sm-rounded-button-team-style" type="button">
+                      <svg class="sm-icon-team" width="20" height="20">
+                        <use
+                          href="./images/icons/icons.svg#icon-instagram-icon"
+                        ></use>
+                      </svg>
+                    </button>
+                  </li>
+                  <li>
+                    <button class="sm-rounded-button-team-style" type="button">
+                      <svg class="sm-icon-team" width="20" height="20">
+                        <use
+                          href="./images/icons/icons.svg#icon-twitter-icon"
+                        ></use>
+                      </svg>
+                    </button>
+                  </li>
+                  <li>
+                    <button class="sm-rounded-button-team-style" type="button">
+                      <svg class="sm-icon-team" width="20" height="20">
+                        <use
+                          href="./images/icons/icons.svg#icon-facebook-icon"
+                        ></use>
+                      </svg>
+                    </button>
+                  </li>
+                  <li>
+                    <button class="sm-rounded-button-team-style" type="button">
+                      <svg class="sm-icon-team" width="20" height="20">
+                        <use
+                          href="./images/icons/icons.svg#icon-linkedin-icon"
+                        ></use>
+                      </svg>
+                    </button>
+                  </li>
+                </ul>
+              </li>
+              <li class="team-member-card">
+                <div
+                  class="team-member-card-photo-container team-member-card-gradient-overlay-container"
+                >
+                  <img
+                    src="./images/img-1.jpg"
+                    alt="Członek zespołu"
+                    width="270"
+                    height="260"
+                  />
+                  <div class="gradient-overlay"></div>
+                </div>
+                <h3 class="team-member-name">John Doe</h3>
+                <p class="work-position">Front End Developer</p>
+                <ul class="nobull sm-icons-container-our-team">
+                  <li>
+                    <button class="sm-rounded-button-team-style" type="button">
+                      <svg class="sm-icon-team" width="20" height="20">
+                        <use
+                          href="./images/icons/icons.svg#icon-instagram-icon"
+                        ></use>
+                      </svg>
+                    </button>
+                  </li>
+                  <li>
+                    <button class="sm-rounded-button-team-style" type="button">
+                      <svg class="sm-icon-team" width="20" height="20">
+                        <use
+                          href="./images/icons/icons.svg#icon-twitter-icon"
+                        ></use>
+                      </svg>
+                    </button>
+                  </li>
+                  <li>
+                    <button class="sm-rounded-button-team-style" type="button">
+                      <svg class="sm-icon-team" width="20" height="20">
+                        <use
+                          href="./images/icons/icons.svg#icon-facebook-icon"
+                        ></use>
+                      </svg>
+                    </button>
+                  </li>
+                  <li>
+                    <button class="sm-rounded-button-team-style" type="button">
+                      <svg class="sm-icon-team" width="20" height="20">
+                        <use
+                          href="./images/icons/icons.svg#icon-linkedin-icon"
+                        ></use>
+                      </svg>
+                    </button>
+                  </li>
+                </ul>
+              </li>
+              <li class="team-member-card">
+                <div
+                  class="team-member-card-photo-container team-member-card-gradient-overlay-container"
+                >
+                  <img
+                    src="./images/img-2.jpg"
+                    alt="Członek zespołu"
+                    width="270"
+                    height="260"
+                  />
+                  <div class="gradient-overlay"></div>
+                </div>
+                <h3 class="team-member-name">John Doe</h3>
+                <p class="work-position">Marketing</p>
+                <ul class="nobull sm-icons-container-our-team">
+                  <li>
+                    <button class="sm-rounded-button-team-style" type="button">
+                      <svg class="sm-icon-team" width="20" height="20">
+                        <use
+                          href="./images/icons/icons.svg#icon-instagram-icon"
+                        ></use>
+                      </svg>
+                    </button>
+                  </li>
+                  <li>
+                    <button class="sm-rounded-button-team-style" type="button">
+                      <svg class="sm-icon-team" width="20" height="20">
+                        <use
+                          href="./images/icons/icons.svg#icon-twitter-icon"
+                        ></use>
+                      </svg>
+                    </button>
+                  </li>
+                  <li>
+                    <button class="sm-rounded-button-team-style" type="button">
+                      <svg class="sm-icon-team" width="20" height="20">
+                        <use
+                          href="./images/icons/icons.svg#icon-facebook-icon"
+                        ></use>
+                      </svg>
+                    </button>
+                  </li>
+                  <li>
+                    <button class="sm-rounded-button-team-style" type="button">
+                      <svg class="sm-icon-team" width="20" height="20">
+                        <use
+                          href="./images/icons/icons.svg#icon-linkedin-icon"
+                        ></use>
+                      </svg>
+                    </button>
+                  </li>
+                </ul>
+              </li>
+              <li class="team-member-card">
+                <div
+                  class="team-member-card-photo-container team-member-card-gradient-overlay-container"
+                >
+                  <img
+                    src="./images/img-3.jpg"
+                    alt="Członek zespołu"
+                    width="270"
+                    height="260"
+                  />
+                  <div class="gradient-overlay"></div>
+                </div>
+                <h3 class="team-member-name">John Doe</h3>
+                <p class="work-position">UI Designer</p>
+                <ul class="nobull sm-icons-container-our-team">
+                  <li>
+                    <button class="sm-rounded-button-team-style" type="button">
+                      <svg class="sm-icon-team" width="20" height="20">
+                        <use
+                          href="./images/icons/icons.svg#icon-instagram-icon"
+                        ></use>
+                      </svg>
+                    </button>
+                  </li>
+                  <li>
+                    <button class="sm-rounded-button-team-style" type="button">
+                      <svg class="sm-icon-team" width="20" height="20">
+                        <use
+                          href="./images/icons/icons.svg#icon-twitter-icon"
+                        ></use>
+                      </svg>
+                    </button>
+                  </li>
+                  <li>
+                    <button class="sm-rounded-button-team-style" type="button">
+                      <svg class="sm-icon-team" width="20" height="20">
+                        <use
+                          href="./images/icons/icons.svg#icon-facebook-icon"
+                        ></use>
+                      </svg>
+                    </button>
+                  </li>
+                  <li>
+                    <button class="sm-rounded-button-team-style" type="button">
+                      <svg class="sm-icon-team" width="20" height="20">
+                        <use
+                          href="./images/icons/icons.svg#icon-linkedin-icon"
+                        ></use>
+                      </svg>
+                    </button>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="section our-clients-section">
+          <div>
+            <h2 class="secondary-headline">Nasi klienci</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+              arcu sem. Sed non sodales dui. Interdum et malesuada
+            </p>
+
+            <ul class="nobull our-clients-list">
+              <li>
+                <svg class="logo-our-clients" width="200" height="200">
+                  <use href="./images/icons/icons.svg#icon-client-1"></use>
+                </svg>
+              </li>
+              <li>
+                <svg class="logo-our-clients" width="200" height="200">
+                  <use href="./images/icons/icons.svg#icon-client-2"></use>
+                </svg>
+              </li>
+              <li>
+                <svg class="logo-our-clients" width="200" height="200">
+                  <use href="./images/icons/icons.svg#icon-client-3"></use>
+                </svg>
+              </li>
+              <li>
+                <svg class="logo-our-clients" width="200" height="200">
+                  <use href="./images/icons/icons.svg#icon-client-4"></use>
+                </svg>
+              </li>
+              <li>
+                <svg class="logo-our-clients" width="200" height="200">
+                  <use href="./images/icons/icons.svg#icon-client-5"></use>
+                </svg>
+              </li>
+              <li>
+                <svg class="logo-our-clients" width="200" height="200">
+                  <use href="./images/icons/icons.svg#icon-client-6"></use>
+                </svg>
+              </li>
+              <li>
+                <svg class="logo-our-clients" width="200" height="200">
+                  <use href="./images/icons/icons.svg#icon-client-3"></use>
+                </svg>
+              </li>
+              <li>
+                <svg class="logo-our-clients" width="200" height="200">
+                  <use href="./images/icons/icons.svg#icon-client-4"></use>
+                </svg>
+              </li>
+              <li>
+                <svg class="logo-our-clients" width="200" height="200">
+                  <use href="./images/icons/icons.svg#icon-client-5"></use>
+                </svg>
+              </li>
+              <li>
+                <svg class="logo-our-clients" width="200" height="200">
+                  <use href="./images/icons/icons.svg#icon-client-6"></use>
+                </svg>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <div class="container">
+          <div class="footer-content">
+            <div>
+              <a class="logotype" href="./index.html"
+                ><span class="piece-of-logotype">Web</span>Studio</a
+              >
+
+              <address class="contact-info">
+                <div class="address-info">
+                  <p>m. Warszawa, Aleje Jerozolimskie 21</p>
+                </div>
+                <ul class="nobull">
+                  <li class="e-mail-link-in-footer">
+                    <a class="contact-link" href="mailto:info@example.com"
+                      >info@example.com</a
+                    >
+                  </li>
+                  <li class="tel-link-in-footer">
+                    <a class="contact-link" href="tel:+48111111111"
+                      >+48 111 111 111</a
+                    >
+                  </li>
+                </ul>
+              </address>
+            </div>
+
+            <div class="social-media-box-footer">
+              <h3 class="social-media-icons-headline-footer">Dołącz do Nas</h3>
+              <ul class="nobull sm-icons-container-footer">
+                <li>
+                  <button class="sm-rounded-button-footer-style" type="button">
+                    <svg class="sm-icon-footer" width="20" height="20">
+                      <use
+                        href="./images/icons/icons.svg#icon-instagram-icon"
+                      ></use>
+                    </svg>
+                  </button>
+                </li>
+                <li>
+                  <button class="sm-rounded-button-footer-style" type="button">
+                    <svg class="sm-icon-footer" width="20" height="20">
+                      <use
+                        href="./images/icons/icons.svg#icon-twitter-icon"
+                      ></use>
+                    </svg>
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="sm-rounded-button-footer-style sm-rounded-button-footer-style-bg"
+                    type="button"
+                  >
+                    <svg class="sm-icon-footer" width="20" height="20">
+                      <use
+                        href="./images/icons/icons.svg#icon-facebook-icon"
+                      ></use>
+                    </svg>
+                  </button>
+                </li>
+                <li>
+                  <button class="sm-rounded-button-footer-style" type="button">
+                    <svg class="sm-icon-footer" width="20" height="20">
+                      <use
+                        href="./images/icons/icons.svg#icon-linkedin-icon"
+                      ></use>
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <button type="button" class="close-btn" data-modal-close>
+            <svg class="icon-x-close-modal-icon" width="18" height="18">
+              <use
+                href="./images/icons/icons.svg#icon-x-close-modal-icon"
+              ></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </div>
+
+    <script src="./js/cursor.js"></script>
+    <script src="./js/jquery.min.js"></script>
+
     <script src="./js/modal.js"></script>
   </body>
 </html>
