@@ -11,6 +11,9 @@
   --border-style: 2px solid #2a2a2a;
 }
 
+
+
+
 h1,
 h2,
 h3,
@@ -54,9 +57,9 @@ header {
   background-color: #C6C6C6;
 }
 
-main .main-banner,
-.brand-values,
-.portfolio-section {
+.main-banner-photo,
+.brand-values
+ {
   animation: 1.5s ease-out 0s 1 mainIsHiddenOnload, 1s ease-out 1.5s 1 fadeIn;
 }
 
@@ -277,7 +280,7 @@ background-clip: text;
 
 .menu-item {
   font-style: normal;
-font-weight: 700;
+font-weight: 500;
 font-size: 16px;
 line-height: 26px;
 letter-spacing: 0.01em;
@@ -438,7 +441,8 @@ letter-spacing: 0.01em;
 .main-banner-content {
   position: relative;
   margin-left: 4px;
-min-height: 80vh;
+min-height: 100vh;
+overflow: hidden;
 }
 
 .main-banner-photo {
@@ -450,6 +454,7 @@ min-height: 80vh;
   transition: transform;
   transform: scale(100%);
   margin-top: 80px;
+  
 }
 
 .main-banner-photo-overlay {
@@ -465,7 +470,10 @@ mix-blend-mode: color;
 /* height: 100%;
 width: 100%; */
 z-index: 2;
+/* overflow: hidden; */
 }
+
+
 
 .main-banner-photo-overlay-2 {
 
@@ -473,7 +481,7 @@ z-index: 2;
 left: 0;
 right: 0;
 top: 0;
-bottom: 100px;
+bottom: 0px;
   
   min-height: 80vh;
 /* left:0;
@@ -487,6 +495,37 @@ mix-blend-mode: normal;
 width: 100%; */
 
 }
+
+.main-banner-photo-overlay-3 {
+
+  position: absolute;
+left: -20vh;
+right: 0;
+top: 0;
+width: 30vh;
+height: 30vh;
+
+border-radius: 100%;
+bottom: 100px;
+filter: blur(50px);
+ background:  #e44c0b ;
+mix-blend-mode: difference;
+  opacity: 100%;
+  z-index: 5;
+  animation: lightRadialGradientMotion 3s ease-in-out infinite;
+  
+}
+
+@keyframes lightRadialGradientMotion {
+  0% {
+    transform: translateX(-100vh);
+    transform: translateY(0vh);
+  }
+100% {
+  transform: translateX(200vh);
+}
+}
+
 
 .main-headline {
   position: absolute;
