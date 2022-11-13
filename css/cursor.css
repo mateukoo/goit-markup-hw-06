@@ -86,27 +86,28 @@
   height: 16px;
   top: -50%;
   left: -50%;
-  margin: -5px 0 0 -5px;
+  margin: -7px 0 0 -7px;
   border-radius: 50%;
-  border: 1px solid #000000;
+  border: 1px solid  #274EF0;
 
   /* background: rgba(217, 217, 217, 1); */
   /* box-shadow: 0 0 5px 10px #555; */
   /* mix-blend-mode: difference; */
   /* filter: blur(8px); */
-  backdrop-filter: blur(3px);
+  backdrop-filter: blur(2px);
 
   /* backface-visibility: hidden; */
-  transition: 0.5s transform ease-out;
+  transition: 0.5s width ease-out, 0.5s height ease-out;
+  /* transition: 0.1s ease-out; */
   z-index: 1000;
   pointer-events: none;
   
  overflow: hidden;
 }
 .cursor.is-moving {
-  transform: scale(2);
-  
- 
+   width: 64px;
+  height: 64px;
+
   
 }
 
