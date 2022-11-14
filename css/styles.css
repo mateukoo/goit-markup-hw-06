@@ -434,6 +434,72 @@ letter-spacing: 0.01em;
   fill: #f5f4fa;
 }
 
+.icon-diagram-statistics {
+  
+}
+
+.about-us-section {
+  display: inline-flex;
+  gap: 30px;
+  width: 100%;
+}
+
+.about-us-section-text {
+  display: block;
+max-width: 570px;
+margin-block: 36px;
+}
+
+.about-us-section-text > h2 {
+  margin-bottom: 36px;
+  font-weight: 500;
+font-size: 88px;
+line-height: 1;
+letter-spacing: 0.01em;
+background: linear-gradient(270deg, #274EF0 0%, #FF6B00 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+
+}
+
+.about-us-section-text p:nth-of-type(1) {
+  margin-bottom: 36px;
+  font-weight: 700;
+font-size: 24px;
+line-height: 1.68;
+/* or 167% */
+letter-spacing: 0.01em;
+color: #000000;
+  
+}
+
+.about-us-section-text p:nth-of-type(2) {
+  margin-bottom: 36px;
+  font-weight: 500;
+font-size: 24px;
+line-height: 1.68;
+/* or 167% */
+letter-spacing: 0.01em;
+color: #444444;
+}
+.about-us-section-text a:nth-of-type(1) {
+  font-weight: 500;
+font-size: 20px;
+line-height: 1.67px;
+letter-spacing: 0.03em;
+color: #000000;
+}
+
+.icon-timer {
+  background: blue;
+  fill: black;
+}
+
+.icon-diagram-statistics {
+  fill: black;
+}
+
 /* .hiddenheader {
   display: none;
 } */
